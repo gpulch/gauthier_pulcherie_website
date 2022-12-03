@@ -1,0 +1,62 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* width: 100vw; */
+  }
+
+  /* site is column based : alternatig black and white row for HI 
+then rows with black and white columns for each section.*/
+
+  /* main column */
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    /* justify-content: center; */
+    scroll-snap-align: start; /* magnet for smooth scrolling */
+  }
+
+  /* setting column1 for black bg and columns2 for white */
+  header .column1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+  }
+  header .column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    color: darkgray;
+  }
+
+  .column1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 50vh;
+    color: whitesmoke;
+  }
+  .column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 50vh;
+    color: darkgray;
+  }
+  #GRAPHIC .column2 {
+    background-color: black;
+  }
+}

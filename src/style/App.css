@@ -1,0 +1,301 @@
+/* fonts */
+
+@font-face {
+	font-family: "San Francisco";
+	font-weight: 4000;
+	src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/* Smooth scrolling on the whole document */
+html {
+	scroll-behavior: smooth;
+	overflow: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+/* default full page settings */
+#root
+{
+	font-family:'San Francisco', Arial;
+	font-weight: bold;
+	width: 100vw;
+}
+
+/* container parents all sections + header */
+.container, html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+
+/* site is column based : alternatig black and white row for HI 
+then rows with black and white columns for each section.*/
+
+/* main column */
+.column {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	scroll-snap-align: start; /* magnet for smooth scrolling */
+
+}
+
+/* setting column1 for black bg and columns2 for white */
+.column1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background-color: black;
+	width: 50vw;
+	height: 100vh;
+	color: whitesmoke;
+}
+.column2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background-color: whitesmoke;
+	width: 50vw;
+	height: 100vh;
+	color: darkgray;
+}
+
+/* divs for white columns img resizing*/
+.see_desc {
+	display: flex;
+	padding-bottom: 22px;
+
+}
+
+
+#topsection {
+	font-family:'San Francisco', Arial;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: fixed;
+	width: 100vw;
+	background-color: whitesmoke;
+
+}
+
+header
+{
+	width: 100vw;
+}
+
+
+#HI h1 {
+	transition: transform 2s;
+
+}
+#HI h1:hover {
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+
+}
+
+body h1
+{
+	font-family: 'San Francisco', Arial;
+	font-weight: bold;
+	font-size: 4em;
+	color:  whitesmoke;
+}
+
+
+body p
+{
+	color: darkgray;
+	font-size: 2em;
+}
+
+
+/* footer design */
+
+footer {
+	margin: 20px;
+	padding-bottom: 20px;
+	text-align: right;
+	max-width: 100vwr;
+	scroll-snap-align: start;
+}
+
+
+/* contact */
+
+#contact
+{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin-right: 30px;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+	order: 2;
+}
+
+#contact a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+#contact a {
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+
+/* Navigation */
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	order: 1;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+/* figures images zoom on hover */
+section img:hover
+{
+	-ms-transform: scale(1.2); 
+	-webkit-transform: scale(1.2); 
+	transform: scale(1.2); 
+}
+
+
+
+/* dynamic resizing of images */
+
+header img {
+	
+	display: flex;
+	height: auto;
+	max-width: 80vw;
+	max-height: 80vh;
+}
+/* section img {
+  max-height: 25vh;
+  justify-items: center;
+	transition: transform 0.3s;
+	
+	margin: 35px;
+	height: auto;
+} */
+
+
+/* media queries */
+@media screen and (max-width: 1024px)
+{
+	#full_page {
+		max-width: 100vw;
+		margin: 0px;
+	}
+
+	#topsection
+	{
+
+		width: 100vw;
+		font-size: 0.8em;
+		flex-wrap: nowrap;
+		flex-direction: column;
+
+	}
+
+	#HI column1 {
+		height: 50vh;
+	}
+	#contact{
+		display: none;
+	}
+	nav ul{
+		justify-content: space-around;
+		padding-right: 15px;
+	}
+	img{
+		size: auto;
+		max-width: 25vh;
+		margin: 0px;
+		justify-content: center;
+	}
+	
+	body p{
+		font-size: 1em;
+		max-width: 100vw;
+		justify-content: center;
+	}
+	body h1{
+		font-size: 2em;
+	}
+	.column{
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+	.column1{
+		width: 100vw;
+		height: 50vh;
+	}
+	.column2{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		text-align: center;
+		width: 100vw;
+		height: 50vh;
+	}
+}
+
+/* j'essaie de regler les bugs lorsqu'en portrait */
+@media screen and (orientation:landscape) and (max-width: 1024px)
+{
+	.column{
+		flex-flow: 1;
+		padding-top: 20px;
+	}
+	#header img{
+
+		margin-top: 100px;
+	}
+	#topsection
+	{
+		flex-direction: column;
+		
+	}
+}
+
