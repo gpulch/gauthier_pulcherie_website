@@ -20,6 +20,7 @@ export default class extends React.Component {
         totalSlides={6}
         isPlaying={true}
         interval={5000}
+        infinite={true}
         step={1}
         lockOnWindowScroll={true}
         dragEnabled={true}

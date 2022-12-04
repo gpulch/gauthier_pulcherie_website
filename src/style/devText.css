@@ -1,0 +1,33 @@
+#DEV .column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+  color: whitesmoke;
+}
+
+#DEV .column1 h1 {
+  font-size: 5vw;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hoverDev:visited {
+  opacity: 1;
+}
+.hoverDev:hover, .hoverDev:active {
+  transition-duration: 2s;
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+  color: #008f11;
+}

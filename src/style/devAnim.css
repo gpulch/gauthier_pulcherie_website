@@ -3,9 +3,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30vh;
+  height: 50vh;
   width: 100vw;
+  overflow: hidden;
 }
+
+#DEV a {
+  text-decoration: none;
+}
+
+/* console.log(" */
 .start {
   text-align: left;
   padding-left: 10vw;
@@ -14,38 +21,36 @@
 .string {
   font-size: 1.5vh;
   text-align: center;
-  
 }
 
 .greeting {
   position: relative;
   top: 10vmin;
   animation: white-out 5s infinite;
+  max-width: 100vw;
 }
 
 .en {
   color: #fa8231;
-  padding-left: 20vw;
+  padding-left: 0vw;
   animation: move 4s infinite;
 }
-
 .es {
   color: rgb(23, 236, 214);
-  padding-right: 20vw;
+  padding-right: 30vw;
   animation: move 8s infinite;
 }
-
 .de {
   color: #c678dd;
   padding-left: 20vw;
   animation: move 10s infinite;
 }
-
 .it {
   color: #a9b0bd;
   padding-right: 20vw;
   animation: move 16s infinite;
 }
+
 .end {
   text-align: right;
   padding-right: 10vw;
@@ -53,16 +58,13 @@
 
 @keyframes move {
   25% {
-    transform: translatey(-22vmin) translatex(-5vmin);
-    
+    transform: translatey(-5vmin) translatex(-15vmin);
     opacity: 1;
   }
   50% {
-    transform: translatey(-11vmin) translatex(11vmin);
-   
+    transform: translatey(20vmin) translatex(-11vmin);
   }
   75% {
-    transform: translatey(-35.5vmin);
-    transform: translatex(16.5vmin);
+    transform: translatey(-30vmin) translatex(16.5vmin);
   }
 }

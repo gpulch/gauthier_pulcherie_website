@@ -1,9 +1,11 @@
 @media only screen and (max-width: 600px) {
   /* Navigation */
-    .topSection {
-        width: 100vw;
-        position: absolute
-    }
+  .topSection {
+    top: 0;
+    width: 100vw;
+    position: absolute;
+    background-color: red;
+  }
   nav {
     padding: 1vh 5vw 1vh 5vw;
     max-width: 100vw;

@@ -1,8 +1,13 @@
 import "./style/container.css";
+
+import HiName from "./hiName";
+import DevText from "./devText";
+import DevAnim from "./devAnim";
 import CarouselMusic from "./carouselMusic";
 import CarouselPhoto from "./carouselPhoto";
-import DevAnim from "./devAnim";
-import React, { useState, useEffect } from "react";
+import Socials from "./socials";
+
+import React from "react";
 
 function Container() {
   return (
@@ -12,27 +17,36 @@ function Container() {
           <div className="row">
             <div className="column">
               <div className="column1">
-                <h1>
-                  Gauthier <br /> Pulcherie.
-                </h1>
+                <HiName />
               </div>
             </div>
-            {/* <div className="column">
-              <div className="column2">
-                <p>placeholder carte de visite </p>
-              </div>
-            </div> */}
           </div>
         </header>
 
         <section>
+          <div id="DEV">
+            <div className="row">
+              <div className="column">
+                <div className="column1">
+                  <DevText />
+                </div>
+
+                <a href="https://github.com/gpulch">
+                  <div className="column2">
+                    <DevAnim />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div id="AUDIO">
             <div className="row">
               <div className="column">
                 <div className="column1">
                   <h1>
-                    I <br /> &nbsp;&nbsp; Make <br />{" "}
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Music.
+                    Hear <br /> &nbsp;&nbsp;&nbsp;&nbsp; Me <br />{" "}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Out...
                   </h1>
                 </div>
                 <div className="column2">
@@ -49,7 +63,9 @@ function Container() {
               <div className="column">
                 <div className="column1">
                   <h1>
-                    Take <br /> Pictures.
+                    So... <br />
+                    <br />
+                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...You See...
                   </h1>
                 </div>
                 <div className="column2">
@@ -61,29 +77,15 @@ function Container() {
             </div>
           </div>
 
-          <div id="FLY">
+          <div id="SOCIALS">
             <div className="row">
               <div className="column">
                 <div className="column1">
-                  <h1>Drone.</h1>
+                  <h1>Here are my socials:</h1>
                 </div>
 
                 <div className="column2">
-                  <p>Bet you never seen it from this angle.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="DEV">
-            <div className="row">
-              <div className="column">
-                <div className="column1">
-                  <h1>Develop.</h1>
-                </div>
-
-                <div className="column2">
-                  <DevAnim />
+                  <Socials />
                 </div>
               </div>
             </div>

@@ -1,0 +1,61 @@
+header .column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  color: whitesmoke;
+}
+
+.myNameIs {
+  padding-bottom: 10vh;
+  align-items: center;
+  color: rgb(142, 132, 132);
+  justify-content: left;
+  text-align: center;
+}
+
+/* Header animations */
+#HI h1:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+#HI h1 {
+  transform: scale(1);
+  animation: initialPulse 3s linear, pulse 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes initialPulse {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(2);
+  }
+  92% {
+    transform: scale(0.9);
+  }
+  98% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}

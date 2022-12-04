@@ -16,7 +16,8 @@ export default class extends React.Component {
         isIntrinsicHeight={true}
         totalSlides={3}
         isPlaying={true}
-        interval={10000}
+        interval={5000}
+        infinite={true}
         step={1}
         lockOnWindowScroll={true}
         dragEnabled={true}

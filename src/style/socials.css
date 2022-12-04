@@ -1,0 +1,10 @@
+.socials img{
+/* height: 10vh; */
+max-width: 20vw;
+padding: 2vh 2vw 2vh 2vw;
+}
+
+.socials {
+    display:flex;
+    
+}

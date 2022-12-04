@@ -14,16 +14,16 @@ function TopSection() {
                 <a href="#HI">Hi</a>
               </li>
               <li>
+                <a href="#DEV">Dev</a>
+              </li>
+              <li>
                 <a href="#AUDIO">Audio</a>
               </li>
               <li>
-                <a href="#GRAPHIC">Graphic</a>
+                <a href="#GRAPHIC">Photo</a>
               </li>
               <li>
-                <a href="#FLY">Drone</a>
-              </li>
-              <li>
-                <a href="#DEV">Dev</a>
+                <a href="#SOCIALS">Socials</a>
               </li>
             </ul>
           </nav>
