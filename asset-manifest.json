@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gauthier_pulcherie_website/static/css/main.a574816b.css",
-    "main.js": "/gauthier_pulcherie_website/static/js/main.b6a2ab1a.js",
+    "main.css": "/gauthier_pulcherie_website/static/css/main.5e1a8f5c.css",
+    "main.js": "/gauthier_pulcherie_website/static/js/main.e2348ade.js",
     "static/media/4.jpg": "/gauthier_pulcherie_website/static/media/4.b503ca1bb3325c2e29d1.jpg",
     "static/media/5.jpg": "/gauthier_pulcherie_website/static/media/5.cfd1afb420ba2a34c214.jpg",
     "static/media/6.jpg": "/gauthier_pulcherie_website/static/media/6.349b129b4d0661e58f61.jpg",
@@ -9,11 +9,11 @@
     "static/media/2.jpg": "/gauthier_pulcherie_website/static/media/2.ac1ef6c80dc0c4f03930.jpg",
     "static/media/3.jpg": "/gauthier_pulcherie_website/static/media/3.bddabf9597c380e08612.jpg",
     "index.html": "/gauthier_pulcherie_website/index.html",
-    "main.a574816b.css.map": "/gauthier_pulcherie_website/static/css/main.a574816b.css.map",
-    "main.b6a2ab1a.js.map": "/gauthier_pulcherie_website/static/js/main.b6a2ab1a.js.map"
+    "main.5e1a8f5c.css.map": "/gauthier_pulcherie_website/static/css/main.5e1a8f5c.css.map",
+    "main.e2348ade.js.map": "/gauthier_pulcherie_website/static/js/main.e2348ade.js.map"
   },
   "entrypoints": [
-    "static/css/main.a574816b.css",
-    "static/js/main.b6a2ab1a.js"
+    "static/css/main.5e1a8f5c.css",
+    "static/js/main.e2348ade.js"
   ]
 }
