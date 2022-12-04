@@ -3,9 +3,7 @@
     width: 100vw;
   }
   .carouselPhoto img {
-
-/*  vertical-align: middle; */
-
+    touch-action: none;
     max-height: 50vh;
     width: 100vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
