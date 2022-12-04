@@ -8,8 +8,8 @@ function Footer() {
     <React.Fragment>
       <footer>
         <p>
-        Copyrights Pulch Productions 2022 <br />
-        Gauthier Pulcherie
+        
+        © 2022 - Gauthier Pulcherie 
         </p>
       </footer>
     </React.Fragment>

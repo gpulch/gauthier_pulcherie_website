@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 600px) {
   .container {
     display: flex;
@@ -38,7 +39,41 @@ then rows with black and white columns for each section.*/
     color: darkgray;
   }
   
-  #GRAPHIC .column2 {
+ 
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    scroll-snap-align: start; /* magnet for smooth scrolling */
+    scroll-snap-type: mandatory;
+  }
+  .column1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: black;
+    width: 50vw;
+    height: 100vh;
+    color: whitesmoke;
+  }
+  .column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: whitesmoke;
+    width: 50vw;
+    height: 100vh;
+    color: darkgray;
   }
 }

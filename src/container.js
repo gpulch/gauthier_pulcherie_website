@@ -14,13 +14,7 @@ function Container() {
     <React.Fragment>
       <div className="container">
         <header id="HI">
-          <div className="row">
-            <div className="column">
-              <div className="column1">
-                <HiName />
-              </div>
-            </div>
-          </div>
+          <HiName />
         </header>
 
         <section>

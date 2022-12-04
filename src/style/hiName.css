@@ -1,32 +1,69 @@
-header .column1 {
+#HI {
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: black;
   width: 100vw;
   height: 100vh;
   color: whitesmoke;
+  overflow: hidden;
 }
 
 .myNameIs {
-  padding-bottom: 10vh;
-  align-items: center;
-  color: rgb(142, 132, 132);
-  justify-content: left;
+  margin-top: 20vh;
+  font-size: 1.5vh;
+  color: rgb(139, 139, 139);
   text-align: center;
+  animation: initialPulseHi 3s linear, pulseHi 6s infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes initialPulseHi {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulseHi {
+  0% {
+    transform: translateX(0);
+  }
+  2% {
+    transform: translateX(-2vw);
+  }
+  4% {
+    transform: translateX(2vw);
+  }
+  6% {
+    transform: translateX(-2vw);
+  }
+  8% {
+    transform: translateX(2vw);
+  }
+  10% {
+    transform: translateX(0);
+  }
+ 
+}
+
+
+.name {
+
 }
 
 /* Header animations */
-#HI h1:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-}
-#HI h1 {
+.name {
+  margin-top: 10vh;
+  text-align: center;
   transform: scale(1);
-  animation: initialPulse 3s linear, pulse 3s infinite;
+  animation: initialPulse 5s linear, pulse 3s infinite;
   animation-timing-function: ease-in-out;
 }
+
 
 @keyframes initialPulse {
   0% {
@@ -36,26 +73,24 @@ header .column1 {
     transform: scale(0.9);
   }
   80% {
-    transform: scale(2);
+    transform: scale(1.5);
   }
-  92% {
-    transform: scale(0.9);
-  }
-  98% {
+  90% {
     transform: scale(0.95);
   }
   100% {
-    transform: scale(0.95);
+    transform: scale(1);
   }
 }
 @keyframes pulse {
   0% {
-    transform: scale(0.95);
+    transform: scale(1);
   }
   70% {
-    transform: scale(1.05);
+    transform: scale(1.15);
   }
   100% {
-    transform: scale(0.95);
+    transform: scale(1);
   }
+
 }

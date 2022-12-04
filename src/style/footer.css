@@ -1,13 +1,17 @@
 @media only screen and (max-width: 600px) {
   footer {
+    position: absolute;
     width: 100vw;
-    scroll-snap-align: start; /* magnet for smooth scrolling */
+    /* scroll-snap-align: end;  */
     text-align: right;
     justify-content: right;
+    background-color: black;
   }
   footer p {
-    margin : 2vh 3vw;
+    padding: 1vh 5vw;
     font-size: 1.5vh;
     font-weight: bold;
+    background-color: black;
+    color: whitesmoke;
   }
 }

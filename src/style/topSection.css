@@ -1,16 +1,17 @@
 @media only screen and (max-width: 600px) {
   /* Navigation */
   .topSection {
+    scroll-snap-align: start;
     top: 0;
     width: 100vw;
     position: absolute;
     background-color: red;
+    z-index: 1;
   }
   nav {
     padding: 1vh 5vw 1vh 5vw;
     max-width: 100vw;
     background-color: whitesmoke;
-    scroll-snap-align: start;
     /* border-radius: 30px 30px 0 0; */
   }
   nav ul {
@@ -21,6 +22,38 @@
   }
   nav a {
     font-size: 2.5vh;
+    font-weight: bold;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #626262;
+    border-bottom: 3px solid #626262;
+  }
+}
+@media only screen and (min-width: 600px) {
+
+  .topSection {
+    top: 0;
+    width: 100vw;
+    position: absolute;
+  }
+  nav {
+    padding: 1vh 5vw 1vh 5vw;
+    max-width: 100vw;
+    background-color: white;
+    scroll-snap-align: start;
+    /* border-radius: 30px 30px 0 0; */
+  }
+  nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  nav a {
+    font-size: 5vh;
     font-weight: bold;
     color: #181818;
     padding-bottom: 3px;

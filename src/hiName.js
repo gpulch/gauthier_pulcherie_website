@@ -11,9 +11,11 @@ function HiText() {
           My name is
         </h2>
       </div>
-      <h1>
-        Gauthier <br /> Pulcherie.
-      </h1>
+      <div className="name">
+        <h1>
+          Gauthier <br /> Pulcherie.
+        </h1>
+      </div>
     </React.Fragment>
   );
 }
