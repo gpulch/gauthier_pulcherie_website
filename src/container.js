@@ -1,8 +1,8 @@
 import "./style/container.css";
 import CarouselMusic from "./carouselMusic";
 import CarouselPhoto from "./carouselPhoto";
+import DevAnim from "./devAnim";
 import React, { useState, useEffect } from "react";
-import "./style/devAnim.css";
 
 function Container() {
   return (
@@ -67,7 +67,7 @@ function Container() {
                 <div className="column1">
                   <h1>Drone.</h1>
                 </div>
-                
+
                 <div className="column2">
                   <p>Bet you never seen it from this angle.</p>
                 </div>
@@ -83,16 +83,7 @@ function Container() {
                 </div>
 
                 <div className="column2">
-                  <div className="helloWorld">
-                    <h1 className="start">console.log("</h1>
-                    <div class="string">
-                      <h1 class="greeting en">Hello World!</h1>
-                      <h1 class="greeting es">¡Hola Mundo!</h1>
-                      <h1 class="greeting de">Hallo Welt!</h1>
-                      <h1 class="greeting it">Ciao Mondo!</h1>
-                    </div>
-                    <h1 className="end">");</h1>
-                  </div>
+                  <DevAnim />
                 </div>
               </div>
             </div>

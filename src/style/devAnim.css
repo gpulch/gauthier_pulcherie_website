@@ -1,50 +1,68 @@
-#DEV .column2 {
-  padding: 5vh 0;
-}
-.string {
+.helloWorld {
+  font-size: 1.5vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  animation: move 4s infinite;
+  justify-content: center;
+  height: 30vh;
+  width: 100vw;
 }
 .start {
-  display: flex;
-  position: relative;
   text-align: left;
-  background-color: red;
-  justify-content: start;
+  padding-left: 10vw;
 }
+
+.string {
+  font-size: 1.5vh;
+  text-align: center;
+  
+}
+
 .greeting {
   position: relative;
-  top: 8.6vmin;
+  top: 10vmin;
   animation: white-out 5s infinite;
 }
 
 .en {
   color: #fa8231;
+  padding-left: 20vw;
+  animation: move 4s infinite;
 }
 
 .es {
-  color: white;
+  color: rgb(23, 236, 214);
+  padding-right: 20vw;
+  animation: move 8s infinite;
 }
 
 .de {
   color: #c678dd;
+  padding-left: 20vw;
+  animation: move 10s infinite;
 }
 
 .it {
   color: #a9b0bd;
+  padding-right: 20vw;
+  animation: move 16s infinite;
+}
+.end {
+  text-align: right;
+  padding-right: 10vw;
 }
 
 @keyframes move {
   25% {
-    transform: translatey(-5.8vmin);
+    transform: translatey(-22vmin) translatex(-5vmin);
+    
     opacity: 1;
   }
   50% {
-    transform: translatey(-11vmin);
+    transform: translatey(-11vmin) translatex(11vmin);
+   
   }
   75% {
-    transform: translatey(-16.5vmin);
+    transform: translatey(-35.5vmin);
+    transform: translatex(16.5vmin);
   }
 }

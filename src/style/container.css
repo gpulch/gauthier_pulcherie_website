@@ -2,7 +2,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    -webkit-overflow-scrolling: touch;
     /* width: 100vw; */
   }
 
@@ -13,9 +13,9 @@ then rows with black and white columns for each section.*/
   .column {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: stretch; */
-    /* justify-content: center; */
+    height: 100vh;
     scroll-snap-align: start; /* magnet for smooth scrolling */
+    scroll-snap-type: mandatory;
   }
 
   /* setting column1 for black bg and columns2 for white */
@@ -56,6 +56,63 @@ then rows with black and white columns for each section.*/
     height: 50vh;
     color: darkgray;
   }
+  #HI h1:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+  }
+  #HI h1 {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: initialPulse 3s linear, pulse 3s infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes initialPulse {
+    0% {
+      transform: scale(1);
+      ;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    15% {
+      transform: scale(0.9);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    80% {
+      transform: scale(2);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    98% {
+      transform: scale(0.90);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
   #GRAPHIC .column2 {
     background-color: black;
   }
